@@ -2,9 +2,13 @@
 package main
 
 // パッケージのインポート
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // メイン関数
 func main() {
 	fmt.Println("Hello World")
+	fmt.Println(time.Now())
 }
