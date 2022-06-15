@@ -41,4 +41,31 @@ func main() {
 	fmt.Println(s[0])
 	// バイト型を文字列に変換が必要 => H
 	fmt.Println(string(s[0]))
+
+	// バイト型
+	c := []byte{72, 73}
+	fmt.Println(c)
+
+	// 配列
+	// 配列の型のみを宣言。この場合配列の値には初期値が入る
+	var arry1 [3]int
+	fmt.Println(arry1)
+
+	// 配列の値を指定して宣言。intの初期値は0でstringの初期値は""(空文字)
+	var arry2 [3]string = [3]string{"a", "b"}
+	fmt.Println(arry2)
+
+	arry3 := [2]string{"tes", "t"}
+	fmt.Println(arry3)
+
+	// [...]とすると個数を指定しなくても値の中身を分析して個数推測してくれる
+	arry4 := [...]int{1, 2}
+	fmt.Println(arry4)
+
+	// 配列のインデックスを指定し値を代入
+	arry2[2] = "c"
+	fmt.Println(arry2)
+
+	// 配列の長さを確認
+	fmt.Println(len(arry3))
 }
