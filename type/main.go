@@ -68,4 +68,22 @@ func main() {
 
 	// 配列の長さを確認
 	fmt.Println(len(arry3))
+
+	// インターフェイス型
+	var x interface {}
+	// 初期値はnil
+	fmt.Println(x)
+
+	// interfaceはintやstring、配列など様々な型を代入できる
+	x = 1
+	fmt.Println(x)
+
+	x = 2.34
+	fmt.Println(x)
+
+	x = "test"
+	fmt.Println(x)
+
+	x = [2]int{1, 2}
+	fmt.Println(x)
 }
