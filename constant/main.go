@@ -12,6 +12,10 @@ const (
 	Sitename = "test"
 )
 
+func Plus(x int, y int) int {
+	return x + y
+}
+
 func main() {
 	fmt.Println(Pi)
 
@@ -19,4 +23,11 @@ func main() {
 	// const Pi = 3
 
 	fmt.Println(Url, Sitename)
+
+	// 比較演算子
+	fmt.Println(1 == 1)
+	fmt.Println(1 != 1)
+
+	// 関数
+	fmt.Println(Plus(2, 3))
 }
