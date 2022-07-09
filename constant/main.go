@@ -16,6 +16,19 @@ func Plus(x int, y int) int {
 	return x + y
 }
 
+// 返り値が2つの関数
+func Div(x, y int) (int, int) {
+	q := x / y
+	w := x % y
+
+	return q, w
+}
+
+func Price(x int) (result int) {
+	result = x * 2
+	return
+}
+
 func main() {
 	fmt.Println(Pi)
 
@@ -30,4 +43,8 @@ func main() {
 
 	// 関数
 	fmt.Println(Plus(2, 3))
+
+	fmt.Println(Div(2, 4))
+
+	fmt.Println(Price(1000))
 }
