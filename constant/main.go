@@ -29,6 +29,13 @@ func Price(x int) (result int) {
 	return
 }
 
+// 関数を返す関数
+func ReturnFunc() func() {
+	return func() {
+		fmt.Println("Im function")
+	}
+}
+
 func main() {
 	fmt.Println(Pi)
 
@@ -47,4 +54,19 @@ func main() {
 	fmt.Println(Div(2, 4))
 
 	fmt.Println(Price(1000))
+
+	// 無名関数
+	f := func(x, y int) int {
+		return x + y
+	}
+
+	i := f(1, 2)
+
+	fmt.Println((i))
+
+	i2 := ReturnFunc()
+
+	i2()
+
+
 }
