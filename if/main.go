@@ -7,6 +7,13 @@ import (
 
 // エラー文
 
+// 関数が終了したタイミングで実行する処理を登録できる
+// 複数のdeferを登録すると、後に登録されたものから実行される
+func TestDefer() {
+	defer fmt.Println("END")
+	fmt.Println("START")
+}
+
 func main() {
 	var s string = "100"
 
@@ -44,19 +51,20 @@ func main() {
 
 	// switch文
 
-	var x := interface{} = 3
+	// var x := interface{} = 3
 
-	v := x.(int)
-	switch v.(type) {
-	case int:
-		fmt.Println("int")
-	case string:
-		fmt.Println("string")
-	case float32:
-		fmt.Println("default")
-	}
+	// v := x.(int)
+	// switch v.(type) {
+	// case int:
+	// 	fmt.Println("int")
+	// case string:
+	// 	fmt.Println("string")
+	// case float32:
+	// 	fmt.Println("default")
+	// }
 
-	// ラベル付きfor
+	// defer
+	TestDefer()
 }
 
 
