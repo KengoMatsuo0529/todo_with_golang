@@ -16,7 +16,7 @@ func init() {
 func sub() {
 	for {
 		fmt.Println("sub Loop")
-		time.Sleep(100 * time.Millisecond)
+		time.Sleep(50 * time.Millisecond)
 	}
 }
 
@@ -26,6 +26,6 @@ func main() {
 
 	for {
 		fmt.Println("main Looo")
-		time.Sleep(200 * time.Millisecond)
+		time.Sleep(100 * time.Millisecond)
 	}
 }
